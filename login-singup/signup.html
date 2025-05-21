@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Appointment</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="./signup.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Doctor Appointment</div>
+    <button class="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../all-doctors.html">All Doctors</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../doctor-appointment.html">Doctor Appointment</a>
+        <a href="./login-singup/signup.html"><button>Create account</button></a>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Create Account</h2>
+      <p>Please sign up to book appointment</p>
+      <form id="signupForm">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button type="submit">Create account</button>
+      </form>
+      <p class="login-link">Already have an account? <a href="./login.html">Login here</a></p>
+    </div>
+  </main>
+
+  <script src="./signup.js"></script>
+</body>
+</html>
