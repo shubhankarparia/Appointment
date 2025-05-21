@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+   /* #df4eff */
+body {
+  font-family: "Segoe UI", sans-serif;
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  /* background: linear-gradient(to right, #df4eff, #d168e9, #700c87); */
+  background: #df4eff;
+
+  color: #fff;
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 40px 5%;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #00f5d4;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+
+.contact-section {
+  padding: 50px 5%;
+  background: #121212;
+  /* background: linear-gradient(to right, #1a0320, #4b095a, #440552); */
+
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form {
+  flex: 1;
+  min-width: 300px;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 255, 234, 0.2);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  color: #00f5d4;
+  text-align: center;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  width: 100%;
+  background: #000;
+  border: 1px solid #00f5d4;
+  border-radius: 8px;
+  color: #fff;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+form button {
+  padding: 12px;
+  width: 100%;
+  background: #00f5d4;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #00c9b4;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  color: #eee;
+}
+
+.contact-info h3 {
+  color: #00f5d4;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* 🔁 Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content,
+  .contact-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info, form {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  form h2 {
+    font-size: 1.5rem;
+  }
+
+  form button {
+    font-size: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+}

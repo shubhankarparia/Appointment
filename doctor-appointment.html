@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Appointment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- <header>
+    <div class="logo">Doctor Appointment</div>
+    <button class="menu-toggle">&#9776;</button> 
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./all-doctors.html">All Doctors</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="./doctor-appointment.html">Doctor Appointment</a>
+        <a href="./login-singup/signup.html"><button>Create account</button></a>
+    </nav>
+  </header> -->
+  <header class="header">
+    <div class="logo">Doctor Appointment</div>
+
+    <nav class="nav-links" id="navMenu">
+      <a href="./index.html">Home</a>
+      <a href="./all-doctors.html">All Doctors</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="./doctor-appointment.html">Doctor Appointment</a>
+      <a href="./login-singup/signup.html"><button>Create account</button></a>
+    </nav>
+
+    <!-- <div class="profile-menu">
+      <img src="https://i.pravatar.cc/40" alt="Profile" />
+    </div> -->
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+  </header>
+
+  <main>
+    <section class="doctor-profile">
+      <img src="./images/doctor_img1.jpg" alt="Doctor" />
+      <div class="info">
+        <h2>Dr. Doctor Name <span class="verified">✔</span></h2>
+        <p>MBBS - Gynaecology &nbsp; <span class="exp">4 Years</span></p>
+        <div class="about">
+          <strong>About</strong>
+          <p>Dr. Doctor Name has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis,Gynaecology and effective treatment strategies.</p>
+        </div>
+        <div class="fee">Appointment fee: <strong>500</strong></div>
+      </div>
+    </section>
+
+    <section class="booking">
+      <h3>Booking slots</h3>
+      <div class="slots">
+        <div class="day">WED<br>4</div>
+        <div class="day">THU<br>5</div>
+        <div class="day">FRI<br>6</div>
+        <div class="day">SAT<br>7</div>
+        <div class="day">SUN<br>8</div>
+        <div class="day">MON<br>9</div>
+        <div class="day">TUE<br>10</div>
+      </div>
+
+      <div class="times">
+        <button>05:00 pm</button>
+        <button>06:00 pm</button>
+        <button>06:30 pm</button>
+        <button>07:00 pm</button>
+        <button>07:30 pm</button>
+        <button>08:00 pm</button>
+        <button>08:30 pm</button>
+      </div>
+
+      <button class="book-btn">Book an appointment</button>
+    </section>
+
+    <section class="related-doctors">
+      <h3>Related Doctors</h3>
+      <p>Simply browse through our extensive list of trusted doctors.</p>
+      <div class="cards">
+        <div class="card">
+          <img src="./images/doctor_img2.jpg" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img3.avif" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img4.jpeg" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img5.jpg" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img6.png" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="./images/doctor_img2.jpg" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img3.avif" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img4.jpeg" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img5.jpg" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        <div class="card">
+          <img src="./images/doctor_img6.png" alt="Dr. img" />
+          <span class="status available">● Available</span>
+          <h4>Dr. Doctor Name</h4>
+          <p>General physician</p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+            <img src="" alt="Logo"/>
+            <h2>Doctor Appointment</h2>
+            <p>Empowering healthcare with smart AI solutions for faster, better appointments.</p>
+            </div>
+
+            <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./all-doctors.html">Doctors</a></li>
+                <li><a href="./doctor-appointment.html">Doctors Appointment Book</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@abcdefgh.in</p>
+            <p>Phone: +91 1234567890</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 MERN Project Euphoria. All rights reserved.</p>
+            <!-- <button id="scrollTopBtn">↑</button> -->
+        </div>
+    </footer>
+
+  <script src="./script.js">
+    // Scroll to top button
+    document.getElementById("scrollTopBtn").onclick = () => {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

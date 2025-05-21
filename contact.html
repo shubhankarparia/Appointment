@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="logo">Doctor Appointment</div>
+
+    <nav class="nav-links" id="navMenu">
+      <a href="./index.html">Home</a>
+      <a href="./all-doctors.html">All Doctors</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./doctor-appointment.html">Doctor Appointment</a>
+      <a href="./login-singup/signup.html"><button>Create account</button></a>
+    </nav>
+
+    <!-- <div class="profile-menu">
+      <img src="https://i.pravatar.cc/40" alt="Profile" />
+    </div> -->
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="./images/contact.jpg" alt="Contact Image">
+      </div>
+      <div class="hero-text">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Reach out with any questions, feedback, or collaboration ideas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, cupiditate. Accusamus quibusdam qui magni sint numquam explicabo voluptas eveniet laboriosam.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-box">
+      <form id="contactForm">
+        <h2>Send a Message</h2>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Mobile Number" required />
+        <textarea placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Our Address</h3>
+        <p>📍 7000001, kolkata</p>
+        <p>📞 +1 000-000-0000</p>
+        <p>✉️ hello@appointment.com</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thank you! Your message has been sent.');
+    });
+
+    
+
+  </script>
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navMenu");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+
+    // scroll btn == 
+
+    // Scroll to top button
+    document.getElementById("scrollTopBtn").onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+  </script>
+</body>
+</html>
